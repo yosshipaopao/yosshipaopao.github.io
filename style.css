@@ -38,7 +38,7 @@ a:hover {
 h3{
     color: #ff0000;
     font-size: 100px;
-    text-align: justify;
+    text-align: center;
 }
     
 
@@ -127,7 +127,7 @@ nav li:hover{
 /*****ARTICLE*****/
 section{
     display: block;
-    width: 100%;
+    width: 200%;
     margin: 20px auto;
     overflow: hidden;
 }
