@@ -7,14 +7,14 @@
     box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
 }
 
-.text_underline{
+.iaa{
     position: relative; /*.text_underline::beforeの親要素*/
     border-top: 1px solid #c2c2c2; /*text3の下線*/
 }
 
 /*共通のstyle*/
-.text_underline::before,
-.text_underline::after{
+.iaa::before,
+.iaa::after{
     position: absolute; 
     bottom: 0px; /*中央配置*/
     width: 0px; /*アニメーションで0pxから50%に*/
@@ -26,17 +26,17 @@
 }
 
 /*中央から右へのアニメーション*/
-.text_underline::before{
+.iaa::before{
     left: 50%; /*中央配置*/
 }
 
 /*中央から左へのアニメーション*/
-.text_underline::after{ 
+.iaa::after{ 
     right: 50%; /*中央配置*/
 }
 
-#text3:focus + .text_underline::before,
-#text3:focus + .text_underline::after{
+#aa:focus + .iaa::before,
+#aa:focus + .iaa::after{
     width: 50%;
 }
 $('#aa').focus(function(){
