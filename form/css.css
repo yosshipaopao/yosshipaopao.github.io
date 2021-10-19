@@ -1,46 +1,30 @@
-#aa{
-    font-size: 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    padding-bottom: 8px;
-    box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+.textbox{
+  width: 360px;
+  padding: 5px 8px;
+  border-radius: 6px;
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  border-right: 2px solid #aaa;
+  border-bottom: 2px solid #aaa;
+  background-image: none
+  background-color: #ddd;
+  font-size: 16px;
 }
-
-.iaa{
-    position: relative; /*.text_underline::beforeの親要素*/
-    border-top: 1px solid #c2c2c2; /*text3の下線*/
+.btn-submit{
+  width: 300px;
+  height: 50px;
+  padding: 5px 8px;
+  border-radius: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid #aaa;
+  background-image: none;
+  background-color: #666;
+  font-size: 20px;
+  color: #fff;
 }
-
-/*共通のstyle*/
-.iaa::before,
-.iaa::after{
-    position: absolute; 
-    bottom: 0px; /*中央配置*/
-    width: 0px; /*アニメーションで0pxから50%に*/
-    height: 1px; /*高さ*/
-    content: '';
-    background-color: #3be5ae; /*アニメーションの色*/
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
+.btn-submit:active{
+  border-bottom: none;
+  background-color: #888;
 }
-
-/*中央から右へのアニメーション*/
-.iaa::before{
-    left: 50%; /*中央配置*/
-}
-
-/*中央から左へのアニメーション*/
-.iaa::after{ 
-    right: 50%; /*中央配置*/
-}
-
-#aa:focus + .iaa::before,
-#aa:focus + .iaa::after{
-    width: 50%;
-}
-$('#aa').focus(function(){
-    $('#laa').animate({'color': '#3be5ae'}, 500);
-}).blur(function(){
-    $('#laa').animate({'color': 'black'}, 500);
-});
