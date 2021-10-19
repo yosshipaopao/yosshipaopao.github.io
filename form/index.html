@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <form method="post" action="https://script.google.com/macros/s/AKfycbzaJTZftH2dL7T1gO2b57qKvaduLoiQ59EcUCUwGM1um-6VYiEBUDpzHB-sp4KwYCrJsA/exec">
+    <form  onsubmit="return false;"  method="post" action="https://script.google.com/macros/s/AKfycbzaJTZftH2dL7T1gO2b57qKvaduLoiQ59EcUCUwGM1um-6VYiEBUDpzHB-sp4KwYCrJsA/exec">
     <h2>
       ※半角数字で入力してください<br>入力する際、数値がなくても"0"と入力してください。<br>送信後送信確認画面が出なかったら"form1"を確認し、送信されていなかったら再度送信してください<br>それでもだめな場合は情報伝達のシートでどうにかしてください(放棄)<br>２回以降urlが違いますが正常動作しています。<br>Enterキーの扱いなどで複数回送信しないでください<br>
     </h2>
@@ -50,7 +50,7 @@
       <input type="number" name="df" placeholder="四人目の100000札の数" class="textbox" required><br>
       </div>
       <br><br><br><br><br>
-      <input type="submit" value="送信ボタン" class="btn-submit">
+      <input type="button" value="送信ボタン" onclick="submit();" class="btn-submit">
     </main>
   </form>
     <h1>グループ数</h1>
@@ -66,7 +66,8 @@
       // アクションを行わない
       e.preventDefault();
     }
-  }]jQuery(document).ready(function($){
+  }
+jQuery(document).ready(function($){
     $("input").each(function(index, element) {
 
         element.addEventListener("invalid", function(e) {
@@ -74,6 +75,7 @@
                 e.target.setCustomValidity("この項目は入力必須です。");
             } else {
                 e.target.setCustomValidity("");
+                e.preventDefault();
             }
         });
     });
