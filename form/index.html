@@ -49,11 +49,36 @@
       <input type="number" name="de" placeholder="四人目の10000札の数"  class="textbox"><br>
       <input type="number" name="df" placeholder="四人目の100000札の数" class="textbox"><br>
       </div>
-      <br>
+      <br><br><br><br><br>
       <input type="submit" value="send" onclick="location.href='https://www.yosshipaopao.cf/form'" class="btn-submit">
     </main>
   </form>
     <h1>グループ数</h1>
     <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_x7GD8dRkJ1SUx2PORiVjrZkLQ1Ji-sM5z6Z9U1F-FZrvXaQgMSK1K59SoyKqZ4e8Kc7aqmsHyIaw/pubhtml?gid=761673828&amp;single=true&amp;widget=true&amp;headers=false"style="width:640px; height:300px"></iframe>
+  <script language="javascript" type="text/javascript">
+  // Enterキーが押された時にSubmitされるのを抑制する
+  document.getElementById("form1").onkeypress = (e) => {
+    // form1に入力されたキーを取得
+    const key = e.keyCode || e.charCode || 0;
+    // 13はEnterキーのキーコード
+    if (key == 13) {
+      // アクションを行わない
+      e.preventDefault();
+    }
+  }
+
+  const func1 = () => {
+    // form要素の値を取得する
+    name = document.getElementById("name").value;
+    point = document.getElementById("point").value;
+
+    // 取得した値をコンソールに出力する
+    console.log(`名前：${name}`);
+    console.log(`点数：${point}`);
+
+    // actionで指定した先に遷移させない
+    return false;
+  }
+</script>
   </body>
 </html>
