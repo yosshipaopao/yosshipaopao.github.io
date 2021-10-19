@@ -29,6 +29,15 @@
   border-bottom: none;
   background-color: #888;
 }
-p{
+h1{
   font-size: 40px;
 }
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main div {
+  width: 25%;
+}
+
