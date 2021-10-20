@@ -39,16 +39,8 @@ h3{
   font-size: 40px; 
 }
 .flexbox1{
-  display : -webkit-box;     /* old Android */
-  display : -webkit-flex;    /* Safari etc. */
-  display : -ms-flexbox;     /* IE10        */
   display : flex;
-
-  background-color  : #d4ddf8;
   width             : 100%;
-  height            : 50%;
-  margin            : 10px;
-  padding           : 3px;
  }
 .flexbox > div{
   margin      : 3px;
