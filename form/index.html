@@ -19,7 +19,7 @@ font-size : 40px;
     <main>
       <div>
         <h1>札束</h1>
-        <h3><br>1<br>10<br>100<br>1000<br>10000<br>100000<br></h3>
+        <h3>1<br>10<br>100<br>1000<br>10000<br>100000<br></h3>
       </div>
       <div>
       <h1>一人目</h1><br>
@@ -63,33 +63,5 @@ font-size : 40px;
   </form>
     <h1>グループ数</h1>
     <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_x7GD8dRkJ1SUx2PORiVjrZkLQ1Ji-sM5z6Z9U1F-FZrvXaQgMSK1K59SoyKqZ4e8Kc7aqmsHyIaw/pubhtml?gid=761673828&amp;single=true&amp;widget=true&amp;headers=false"style="width:640px; height:300px"></iframe>
-  <!--
-    <script language="javascript" type="text/javascript">
-  // Enterキーが押された時にSubmitされるのを抑制する
-  document.getElementById("form1").onkeypress = (e) => {
-    // form1に入力されたキーを取得
-    const key = e.keyCode || e.charCode || 0;
-    // 13はEnterキーのキーコード
-    if (key == 13) {
-      // アクションを行わない
-      e.preventDefault();
-    }
-  }
-jQuery(document).ready(function($){
-    $("input").each(function(index, element) {
-
-        element.addEventListener("invalid", function(e) {
-            if(element.validity.valueMissing){
-                e.target.setCustomValidity("この項目は入力必須です。");
-            } else {
-                e.target.setCustomValidity("");
-                e.preventDefault();
-            }
-        });
-    });
-});
-
-</script>
--->
   </body>
 </html>
