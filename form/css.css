@@ -38,31 +38,11 @@ h2{
 h3{
   font-size: 40px; 
 }
-.flexbox1{
-  display : flex;
-  width             : 100%;
- }
-.flexbox > div{
-  margin      : 3px;
-  min-height  : 50%;
-  line-height : 50%;
-  flex-basis  : 100%;
+main {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#num{
-  flex-basis        : 10%;
-}
-#fa{
-  flex-basis        : 23%;
-}
-#fb{
-  flex-basis        : 23%;
-}
-
-#fc{
-  flex-basis        : 23%;
-}
-
-#fd{
-  flex-basis        : 23%;
+main div {
+  width: 20%;
 }
