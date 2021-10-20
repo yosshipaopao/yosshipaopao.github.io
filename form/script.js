@@ -1,6 +1,6 @@
 $(function(){
-    $("#set_val").click(function(){
-        $("#input").val("B");
+    $("#btn-submit").click(function(){
+        $("#textbox").val("B");
         return false;
     });
     $("#set_attr").click(function(){
