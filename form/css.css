@@ -1,5 +1,5 @@
 .textbox{
-  width: 300px;
+  width: 250px;
   height: 40px;
   padding: 5px 8px;
   border-radius: 6px;
@@ -31,6 +31,9 @@
 }
 h1{
   font-size: 40px;
+}
+h3{
+  font-size 36px; 
 }
 main {
   display: flex;
