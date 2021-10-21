@@ -1,5 +1,5 @@
 .textbox{
-  width: 250px;
+  width: 95%;
   height: 55px;
   padding: 5px 8px;
   border-radius: 6px;
@@ -44,5 +44,5 @@ main {
 }
 
 main div {
-  width: 20%;
+  width: 33%;
 }
