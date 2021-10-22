@@ -29,6 +29,9 @@
   border-bottom: none;
   background-color: #888;
 }
+table{
+  width: 95%;
+  height: 750px;
 h1{
   font-size: 40px;
 }
