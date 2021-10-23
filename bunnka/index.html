@@ -33,10 +33,10 @@
 	document.form1.field6.value = price6;
 
     //1000bt
-    var price7 = document.form1.goods1000.selectedIndex * 1000; // 単価を設定
+    var price7 = document.form1.goods1000.selectedIndex * -1; // 単価を設定
 	document.form1.field7.value = price7;
     //5000bt
-    var price8 = document.form1.goods5000.selectedIndex * 5000; // 単価を設定
+    var price8 = document.form1.goods5000.selectedIndex * -10; // 単価を設定
 	document.form1.field8.value = price8;
     //10000bt
     var price9 = document.form1.goods10000.selectedIndex * 50; // 単価を設定
@@ -76,10 +76,10 @@
 	document.form1.bf6.value = b6;
 
     //1000bt
-    var b7 = document.form1.bg1000.selectedIndex * 1000; // 単価を設定
+    var b7 = document.form1.bg1000.selectedIndex * -1; // 単価を設定
 	document.form1.bf7.value = b7;
     //5000bt
-    var b8 = document.form1.bg5000.selectedIndex * 5000; // 単価を設定
+    var b8 = document.form1.bg5000.selectedIndex * -10; // 単価を設定
 	document.form1.bf8.value = b8;
     //10000bt
     var b9 = document.form1.bg10000.selectedIndex * 50; // 単価を設定
@@ -119,10 +119,10 @@
 	document.form1.cf6.value = c6;
 
     //1000ct
-    var c7 = document.form1.cg1000.selectedIndex * 1000; // 単価を設定
+    var c7 = document.form1.cg1000.selectedIndex * -1; // 単価を設定
 	document.form1.cf7.value = c7;
     //5000ct
-    var c8 = document.form1.cg5000.selectedIndex * 5000; // 単価を設定
+    var c8 = document.form1.cg5000.selectedIndex * -10; // 単価を設定
 	document.form1.cf8.value = c8;
     //10000ct
     var c9 = document.form1.cg10000.selectedIndex * 50; // 単価を設定
@@ -811,7 +811,7 @@
 </tr>
   
 <tr>
-    <td align="right">1000ビーツ</td>
+    <td align="right">-1ビーツ</td>
     <td>
         <select name="goods1000" onChange="keisan1()">
         <option value="0">0</option>
@@ -920,7 +920,7 @@
 </tr>
   
 <tr>
-    <td align="right">5000ビーツ</td>
+    <td align="right">-10ビーツ</td>
     <td>
         <select name="goods5000" onChange="keisan1()">
         <option value="0">0</option>
@@ -1918,7 +1918,7 @@
     </tr>
       
     <tr>
-        <td align="right">1000ビーツ</td>
+        <td align="right">-1ビーツ</td>
         <td>
             <select name="bg1000" onChange="keisan2()">
             <option value="0">0</option>
@@ -2027,7 +2027,7 @@
     </tr>
       
     <tr>
-        <td align="right">5000ビーツ</td>
+        <td align="right">-100ビーツ</td>
         <td>
             <select name="bg5000" onChange="keisan2()">
             <option value="0">0</option>
@@ -3026,7 +3026,7 @@
         </tr>
           
         <tr>
-            <td align="right">1000ビーツ</td>
+            <td align="right">-1ビーツ</td>
             <td>
                 <select name="cg1000" onChange="keisan3()">
                 <option value="0">0</option>
@@ -3135,7 +3135,7 @@
         </tr>
           
         <tr>
-            <td align="right">5000ビーツ</td>
+            <td align="right">-10ビーツ</td>
             <td>
                 <select name="cg5000" onChange="keisan3()">
                 <option value="0">0</option>
