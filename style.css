@@ -2,6 +2,7 @@
 /* CSS Document */
 
 body {
+    width: 80%;
     font-family:'Noto Sans JP',sans-serif;
     background-color:#f6f5f4;
  }
@@ -15,10 +16,10 @@ body {
  
  .content {
    background-color:#b3d874;
-   width: 60%;
+   width: 55%;
    height:1000px;
    text-align:center;
-   margin-left:10px;/*サイドバーとメインコンテンツの間に隙間                    をあけた*/
+   margin-left:5%px;/*サイドバーとメインコンテンツの間に隙間                    をあけた*/
  }
  
  article {
