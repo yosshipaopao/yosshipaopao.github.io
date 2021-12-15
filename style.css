@@ -10,6 +10,12 @@ body {
    text-align: center;
  }
  
+#container {
+	max-width: 1400px;	/*ブロックの最大幅*/
+	margin: 0 auto;
+	padding: 0 3%;
+}
+
  .side {
    background-color:#ff838b;
    width:20%;
