@@ -8,15 +8,15 @@ body {
  
  .side {
    background-color:#ff838b;
-   width:100px;
-   height:300px;
+   width:20%;
+   height:1000px;
    text-align:center;
  } 
  
  .content {
    background-color:#b3d874;
-   width:250px;
-   height:300px;
+   width: 60%;
+   height:1000px;
    text-align:center;
    margin-left:10px;/*サイドバーとメインコンテンツの間に隙間                    をあけた*/
  }
