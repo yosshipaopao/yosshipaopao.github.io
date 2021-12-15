@@ -5,6 +5,10 @@ body {
     font-family:'Noto Sans JP',sans-serif;
     background-color:#f6f5f4;
  }
+
+ main{
+   text-align: center;
+ }
  
  .side {
    background-color:#ff838b;
