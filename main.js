@@ -1,6 +1,6 @@
 // Write JavaScript here 
 var path = location.pathname;
-if(path.includes("index") || path == "www.yosshipaopao.cf" || path == "www.yosshipaopao.cf/"){
+if(path.includes("index") || path == "/"){
   var home = document.getElementById("home");
   home.removeAttribute("href");
   home.removeAttribute("class");
