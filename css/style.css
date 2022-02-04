@@ -148,8 +148,8 @@ a {
 .youtube {
   position: relative;
   padding-bottom: 56.25%;
-  margin-bottom: -18vh;
-}
+  margin-bottom: -10vh;
+  margin-top: 10vh;}
 
 .youtube iframe {
   position: absolute;
