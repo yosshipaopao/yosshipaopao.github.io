@@ -130,7 +130,6 @@ a {
   --d: 100%;
   --p: 100%;
 }
-
 #not_links {
   margin-left: 13%;
   line-height: 1.5em;
@@ -149,7 +148,8 @@ a {
   position: relative;
   padding-bottom: 56.25%;
   margin-bottom: -10vh;
-  margin-top: 10vh;}
+  margin-top: 10vh;
+}
 
 .youtube iframe {
   position: absolute;
@@ -216,4 +216,21 @@ li{
 
 .min-font{
   font-size: 1.5vw;
+}
+
+button{
+  margin: 10%;
+  width: 40vw;
+  height: 20vh;
+  border-radius: 10vw;
+  background: linear-gradient(145deg, #d1d9e0, #f8ffff);
+  box-shadow: 5px 5px 10px #c5cdd4, -5px -5px 10px #ffffff;
+
+}
+
+button:hover{
+  box-shadow: none;
+  transform: translate3d(0, 0, 10px);
+  transition-duration: 0.3s;
+  opacity: 0.8;
 }
