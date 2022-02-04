@@ -1,4 +1,10 @@
+@font-face {
+  /*フォントの名前*/
+  font-family: "corporate-logo";
+  src: url("https://www.yosshipaopao.cf/font/Corporate-Logo-Medium-ver2.ttf")
+}
 body {
+  font-family: corporate-logo;
   text-align: center;
   background-color: #000040;
 }
