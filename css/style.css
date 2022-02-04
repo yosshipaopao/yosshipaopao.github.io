@@ -6,12 +6,27 @@
 body {
   font-family: corporate-logo;
   text-align: center;
-  background-color: #000040;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 #parent{
   background: linear-gradient(145deg, #d1d9e0, #f8ffff);
   border-radius: 20px 20px 0px 0px;
   box-shadow: 1px 1px 5px #c5cdd4, -1px -1px 5px #ffffff;
+  opacity: 0.85;
 }
 #child1 {
 }
@@ -30,17 +45,40 @@ footer {
   background-color: #cab64a;
 }
 
+h1{
+  line-height: 1.2em;
+  font-size: 300%;
+  color: #ACB6E5;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 h2 {
   color: #000000;
   font-size: 4vw;
   text-align: left;
   margin: 4%;
+  color: #ACB6E5;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h3 {
   font-size: 3vw;
   margin-top: 10%;
   margin-bottom: 2%;
+  color: #ACB6E5;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h4 {
@@ -57,6 +95,14 @@ a {
   color: #000000;
   text-decoration: none;
   font-size: 2vw;
+}
+img{
+  transition: all 0.5s;
+}
+
+img:hover{
+  transition: all 1s;
+  opacity: 0.3;
 }
 
 @media (min-width: 100px) {
@@ -108,6 +154,14 @@ a {
   text-align: center;
 }
 
+.icons{
+  opacity: 1;
+  transform: all 0.5s;
+}
+.icons:hover{
+  opacity: 0.5;
+}
+
 #icon {
   margin: 5%;
   margin-top: 20%;
@@ -127,8 +181,9 @@ a {
   margin-left: 13%;
   line-height: 1.5em;
   color: #ffffff;
-  background: linear-gradient(currentColor 0 0) var(--p, 0) 100% /var(--d, 0) 0.4vw no-repeat;
+  background: linear-gradient(currentColor 0 0) var(--p, 0) 100% /var(--d, 0) 0.1vw  no-repeat;
   transition: 0.2s, background-position 0s 0.2s;
+  
 }
 
 .links:hover {
@@ -180,14 +235,13 @@ a {
 .works{
   height: 100%;
   border-radius: 3vw;
-  background: linear-gradient(145deg, #d1d9e0, #f8ffff);
   box-shadow: 5px 5px 10px #c5cdd4, -5px -5px 10px #ffffff;
+  transition: all 0.5s;
 }
 
 .works:hover{
   box-shadow: none;
   transform: translate3d(0, 0, 10px);
-  transition-duration: 0.3s;
   opacity: 0.8;
 }
 
@@ -214,9 +268,16 @@ li{
 }
 
 .work-title{
+  color:　#f1b8b8;
   height: 100%;
   text-align: center;
   margin: 5% 0;
+  
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .min-font{
