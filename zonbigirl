@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  <title>ゾンビガール｜yosshipaopao</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/pao.ico">
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+  <body>
+    <div id="parent">
+      <div id="child1">
+        <div class="effect">
+        <a href="/index.html">
+            <img id="icon"src="https://www.yosshipaopao.cf/icon.png">
+        </a>
+        </div>
+        <br>
+        <div id="page-link">
+          <a class="links" href="/index">Home</a>
+          <br>
+          <a class="links" href="/profile">Profile</a>
+          <br>
+          <a class="links" href="/contact">Contact</a>
+          <br>
+        </div>
+        <div class="follow">
+          <span class="mgr-ico">
+            <a class="twitter" href="https://twitter.com/yosshipaopao" target="_blank">
+              <img id="tw_ico" src="https://abs.twimg.com/responsive-web/client-web/icon-svg.168b89d5.svg">
+            </a>
+          </span>
+          <span class="mgr-ico">
+            <a class="youtube" href="https://youtube.com/c/yosshipaopao" target="_blank">
+                <img id="yt_ico" src="https://www.yosshipaopao.cf/svg/yt_ico.svg">
+            </a>
+          </span>
+          <span class="mgr-ico">
+            <a class="github" href="https://github.com/yosshipaopao" target="_blank">
+              <img class="icons" id="gt_ico" src="https://www.yosshipaopao.cf/svg/github.svg">
+            </a>
+          </span>
+        </div>
+      </div>
+      <div id="child2">
+        <!--change-->
+        <h3>【自主制作】ゾンビガール</h3>
+          <p>[youtube]</p>
+        <!--this is-->
+        <div class="youtube">
+            <iframe width="560" height="315 "src="https://www.youtube.com/embed/sI9W0WN-IY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p>[Music]</p>
+        <h4>メレンゲP</h4>
+        <p>[Vocal]</p>
+        <h4>GUMI</h4>
+      </div>
+      <!--change-->
+    </div>
+    <footer>
+      <p>&copy;yosshipaopao</p>
+    </footer>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
