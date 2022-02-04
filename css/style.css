@@ -156,6 +156,7 @@ a {
 }
 
 .youtube iframe {
+  border-radius: 3vw;
   position: absolute;
   top: 0;
   left: 0;
