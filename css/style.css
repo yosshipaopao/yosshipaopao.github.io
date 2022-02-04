@@ -24,7 +24,7 @@ footer {
   background: linear-gradient(145deg, #d1d1d1, #f8f8f8);
   box-shadow: 1px 1px 5px #c5cdd4, -1px -1px 5px #ffffff;
   width: 75%;
-  height: 7vh;
+  height: auto;
   margin: auto;
   text-align: center;
   background-color: #cab64a;
@@ -39,7 +39,7 @@ h2 {
 
 h3 {
   font-size: 3vw;
-  margin-top: 10vh;
+  margin-top: 10%;
   margin-bottom: 2%;
 }
 
@@ -62,7 +62,6 @@ a {
 @media (min-width: 100px) {
   #parent {
     margin: 0 auto;
-    margin-top: 5vh;
     display: flex;
     width: 75%;
     height: auto;
@@ -111,7 +110,7 @@ a {
 
 #icon {
   margin: 5%;
-  margin-top: 10vh;
+  margin-top: 20%;
   border-radius: 100vw;
   text-align: center;
   width: 14vw;
@@ -153,7 +152,6 @@ a {
 .youtube {
   position: relative;
   padding-bottom: 56.25%;
-  margin-bottom: -10vh;
   margin-top: 10vh;
 }
 
