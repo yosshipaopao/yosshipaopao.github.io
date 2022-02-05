@@ -28,11 +28,7 @@ body {
   box-shadow: 1px 1px 5px #c5cdd4, -1px -1px 5px #ffffff;
   opacity: 0.85;
 }
-#child1 {
-}
 
-#child2 {
-}
 
 footer {
   border-radius: 0 0 20px 20px;
@@ -268,7 +264,7 @@ li{
 }
 
 .work-title{
-  color:　#f1b8b8;
+  color: #f1b8b8;
   height: auto;
   text-align: center;
   margin: 5% 0;
@@ -299,4 +295,26 @@ button:hover{
   transform: translate3d(0, 0, 10px);
   transition-duration: 0.3s;
   opacity: 0.8;
+}
+
+.softlist{
+
+}
+.soft{
+
+  background: linear-gradient(45deg,  #fa82b0, #9bf5e0,#eca18a, #7fd4f3);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  border-radius: 1.5vw;
+  font-size: 2vw;
+  color: white;
+  width: auto;
+}
+
+.twitter-timeline{
+  margin-bottom: 100%;
+  border-radius: 3vw;
+}
+.twitter-follow-button{
+  margin: 3vw;
 }
