@@ -1,8 +1,6 @@
-// Write JavaScript here 
-var path = location.pathname;
-if(path.includes("index") || path == "/"){
-  var home = document.getElementById("home");
-  home.removeAttribute("href");
-  home.removeAttribute("class");
-  home.id = "not_links";
+
+
+window.onload = function() {
+  const spinner = document.getElementById('loading');
+  spinner.classList.add('loaded');
 }
