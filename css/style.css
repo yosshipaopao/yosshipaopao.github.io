@@ -351,3 +351,56 @@ button:hover{
   margin: auto;
   text-align: center;
   }
+
+
+@media screen and (max-width:480px) {
+  #parent{
+    width: 100%;
+    display: block;
+  }
+  #child1{
+    background: #aaaaaa;
+    border-radius: 20px 20px 0 0;
+    width:100%;
+    display: flex;
+    background: #aaaaaa;
+  }
+  #child2{
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+  }
+  #icon{
+    margin: 1vw;
+  }
+  .links{
+    font-size: 4vw;
+  }
+  #page-link{
+    margin: auto 0;
+    display: flex;
+    width:30%;
+  }
+  .follow{
+    margin: auto;
+    margin-left: 27vw;
+  }
+  #tw_ico {
+    width: 4vw;
+  }
+
+  #yt_ico {
+    width: 4vw;
+  }
+
+  #gt_ico {
+    width: 4vw;
+  }
+  p{
+    font-size:4vw;
+  }
+  .min-font{
+    font-size: 3vw;
+  }
+}
