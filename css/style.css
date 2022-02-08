@@ -66,6 +66,7 @@ h2 {
 }
 
 h3 {
+  line-height: 1.2em;
   font-size: 3vw;
   margin-top: 10%;
   margin-bottom: 2%;
@@ -328,17 +329,17 @@ button:hover{
   }
   
   #page_top a::after{
-  content: '▲';
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-  position: absolute;
-  top: 10px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  text-align: center;
+    content: '▲';
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
   }
 
 
