@@ -29,14 +29,14 @@ body {
 #parent{
   background: linear-gradient(145deg, #d1d9e0dd, #f8ffffdd);
   border-radius: 20px 20px 0px 0px;
-  box-shadow: 1px 1px 5px #c5cdd4, -1px -1px 5px #ffffff;
+  box-shadow: 1px 1px 5px #aaaaaa, -1px -1px 5px #ffffff;
 }
 
 
 footer {
   border-radius: 0 0 20px 20px;
   background: linear-gradient(145deg, #d1d1d1, #f8f8f8);
-  box-shadow: 1px 1px 5px #c5cdd4, -1px -1px 5px #ffffff;
+  box-shadow: 1px 1px 5px #aaaaaa, -1px -1px 5px #ffffff;
   width: 75%;
   height: auto;
   margin: auto;
@@ -171,7 +171,7 @@ img:hover{
 }
 
 #icon:hover{
-  box-shadow: 5px 5px 10px #c5cdd4, -5px -5px 10px #ffffff;
+  box-shadow: 5px 5px 10px #aaaaaa, -5px -5px 10px #ffffff;
   transition-duration: 0.3s;
   opacity: 0.8;
   
@@ -225,7 +225,7 @@ img:hover{
 .works{
   height: 100%;
   border-radius: 3vw;
-  box-shadow: 0.5vw 0.5vw 1vw #c5cdd4, -0.5vw -0.5vw 1vw #ffffff;
+  box-shadow: 0.5vw 0.5vw 1vw #aaaaaa, -0.5vw -0.5vw 1vw #ffffff;
   transition: all 0.5s;
 }
 
@@ -280,7 +280,7 @@ button{
   height: 20vh;
   border-radius: 10vw;
   background: linear-gradient(145deg, #d1d9e0, #f8ffff);
-  box-shadow: 5px 5px 10px #c5cdd4, -5px -5px 10px #ffffff;
+  box-shadow: 5px 5px 10px #aaaaaa, -5px -5px 10px #ffffff;
 
 }
 
