@@ -1,7 +1,8 @@
-$(function(){
 var script = document.createElement('script'); //変数名は適当なものにでも
 script.src = "https://code.jquery.com/jquery-3.6.0.min.js"; //ファイルパス
-document.head.appendChild(script); //<head>に生成
+document.head.appendChild(script);
+$(function(){
+ //<head>に生成
 window.onload = function() {
   var cur = document.createElement('div');
   cur.className = "cursor";
