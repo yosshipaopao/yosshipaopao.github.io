@@ -1,3 +1,6 @@
+var script = document.createElement('script'); //変数名は適当なものにでも
+script.src = "https://code.jquery.com/jquery-3.6.0.min.js"; //ファイルパス
+document.head.appendChild(script); //<head>に生成
 
 window.onload = function() {
   const spinner = document.getElementById('loading');
