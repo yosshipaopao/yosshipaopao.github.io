@@ -394,3 +394,15 @@ button:hover{
     font-size: 3vw;
   }
 }
+.cursor{
+  position: fixed;
+  /*丸の大きさと色の指定*/
+  background: #fff;
+  border-radius:20px;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;/*真ん中にくるようにマイナスマージンで調整*/
+  z-index: 2;/*一番手前に来るように*/
+  pointer-events: none;/*クリックできなくなるのを防ぐため。noneで対応*/
+  opacity: 0;
+}
