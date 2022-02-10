@@ -429,7 +429,7 @@ button:hover{
 }
 #follower::after {
   
-  transition: transform ease 1s;
+  transition: transform ease .1s;
   display: block;
   content: "!";
   color: #23a6d5;
