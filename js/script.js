@@ -59,14 +59,13 @@ $(document).on("mousemove", function(e) {
     mouseY = e.pageY;
 });
 
+
 $("a").on({
   "mouseenter": function() {
-    console.log("a");
     cursor.addClass("active");
     follower.addClass("active");
   },
   "mouseleave": function() {
-    console.log("b");
     cursor.removeClass("active");
     follower.removeClass("active");
   }
