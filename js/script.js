@@ -6,9 +6,9 @@ window.onload = function() {
   const spinner = document.getElementById('loading');
   spinner.classList.add('loaded');
   const obj = document.getElementById(spinner);
-  obj.classList.add("cursor")
+  obj.classList.add("cursor");
   obj.classList.remove("spinner");
-}
+
 $(function(){
 	
 	//カーソル要素の指定
@@ -27,3 +27,4 @@ $(function(){
 		});
 	});
 });
+}
