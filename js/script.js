@@ -1,35 +1,76 @@
 var script = document.createElement('script'); //変数名は適当なものにでも
 script.src = "https://code.jquery.com/jquery-3.6.0.min.js"; //ファイルパス
 document.head.appendChild(script);
-$(function(){
- //<head>に生成
-window.onload = function() {
+
+var script = document.createElement('script'); //変数名は適当なものにでも
+script.src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"; //ファイルパス
+document.head.appendChild(script);
+
+ window.addEventListener('load', function(){
   var cur = document.createElement('div');
-  cur.className = "cursor";
-  document.body.appendChild(cur); //<head>に生成
+  var cur2 = document.createElement('div');
+  cur.id = "cursor";
+  cur2.id = "follower";
+  document.body.appendChild(cur);
+  document.body.appendChild(cur2); 
   
   const spinner = document.getElementById('loading');
   spinner.classList.add('loaded');
-  const obj = document.getElementById(spinner);
-  obj.classList.add("cursor");
-  obj.classList.remove("spinner");
-
-
-	
+  $(function(){
 	//カーソル要素の指定
-	var cursor=$(".cursor");
-	
-	//mousemoveイベントでカーソル要素を移動させる
-	$(document).on("mousemove",function(e){
-    //カーソルの座標位置を取得
-		var x=e.clientX;
-		var y=e.clientY;
-		//カーソル要素のcssを書き換える用
-		cursor.css({
-			"opacity":"1",
-			"top":y+"px",
-			"left":x+"px"
-		});
-	});
-	}
-})
+	var
+cursor = $("#cursor"),
+follower = $("#follower"),
+cWidth = 8, //カーソルの大きさ
+fWidth = 40, //フォロワーの大きさ
+delay = 10, //数字を大きくするとフォロワーがより遅れて来る
+mouseX = 0, //マウスのX座標
+mouseY = 0, //マウスのY座標
+posX = 0, //フォロワーのX座標
+posY = 0; //フォロワーのX座標
+
+//カーソルの遅延アニメーション
+//ほんの少ーーーしだけ遅延させる 0.001秒
+TweenMax.to({}, .001, {
+  repeat: -1,
+  onRepeat: function() {
+    posX += (mouseX - posX) / delay;
+    posY += (mouseY - posY) / delay;
+    
+    TweenMax.set(follower, {
+        css: {    
+          left: posX - (fWidth / 2),
+          top: posY - (fWidth / 2)
+        }
+    });
+    
+    TweenMax.set(cursor, {
+        css: {    
+          left: mouseX - (cWidth / 2),
+          top: mouseY - (cWidth / 2)
+        }
+    });
+  }
+});
+
+//マウス座標を取得
+$(document).on("mousemove", function(e) {
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+});
+
+$("a").on({
+  "mouseenter": function() {
+    console.log("a");
+    cursor.addClass("active");
+    follower.addClass("active");
+  },
+  "mouseleave": function() {
+    console.log("b");
+    cursor.removeClass("active");
+    follower.removeClass("active");
+  }
+});
+
+});
+});
