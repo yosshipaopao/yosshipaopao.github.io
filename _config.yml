@@ -1,3 +1,4 @@
 theme: jekyll-theme-hacker
+google_analytics: UA-xxxxxx-x
 plugins:
   - jekyll-sitemap
