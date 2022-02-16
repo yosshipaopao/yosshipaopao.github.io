@@ -59,7 +59,31 @@ $(document).on("mousemove", function(e) {
     mouseY = e.pageY;
 });
 
+$(document).on("scroll", function(e) {
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+});
 
+$("body").on({
+  "mouseenter": function() {
+    cursor.removeClass("mouseleave");
+    follower.removeClass("mouseleave");
+  },
+  "mouseleave": function() {
+    cursor.addClass("mouseleave");
+    follower.addClass("mouseleave");
+  }
+});
+$("iframe").on({
+  "mouseenter": function() {
+    cursor.addClass("mouseleave");
+    follower.addClass("mouseleave");
+  },
+  "mouseleave": function() {
+    cursor.removeClass("mouseleave");
+    follower.removeClass("mouseleave");
+  }
+});
 $("a").on({
   "mouseenter": function() {
     cursor.addClass("active");
