@@ -63,9 +63,6 @@ $(document).on("scroll", function(e) {
     mouseX = e.pageX;
     mouseY = e.pageY;
 });
-$(document).on("click", function() {
-    document.iframe.style.pointer-events = 'auto';
-});
 $("body").on({
   "mouseenter": function() {
     cursor.removeClass("mouseleave");
