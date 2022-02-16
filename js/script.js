@@ -16,8 +16,7 @@ document.head.appendChild(script);
   
   const spinner = document.getElementById('loading');
   spinner.classList.add('loaded');
-    $(function(){
-    
+  $(function(){
 	//カーソル要素の指定
 	var
 cursor = $("#cursor"),
@@ -59,32 +58,8 @@ $(document).on("mousemove", function(e) {
     mouseX = e.pageX;
     mouseY = e.pageY;
 });
-$(document).on("scroll", function(e) {
-    mouseX = e.pageX;
-    mouseY = e.pageY;
-});
-$("body").on({
-  "mouseenter": function() {
-    cursor.removeClass("mouseleave");
-    follower.removeClass("mouseleave");
-  },
-  "mouseleave": function() {
-    cursor.addClass("mouseleave");
-    follower.addClass("mouseleave");
-  }
-});
-$("iframe").on({
-  "mouseenter": function() {
-    cursor.addClass("mouseleave");
-    follower.addClass("mouseleave");
-  },
-  "mouseleave": function() {
-    cursor.removeClass("mouseleave");
-    follower.removeClass("mouseleave");
-  }
-});
 
-      
+
 $("a").on({
   "mouseenter": function() {
     cursor.addClass("active");
@@ -95,17 +70,6 @@ $("a").on({
     follower.removeClass("active");
   }
 });
-$("button").on({
-  "mouseenter": function() {
-    cursor.addClass("active");
-    follower.addClass("active");
-  },
-  "mouseleave": function() {
-    cursor.removeClass("active");
-    follower.removeClass("active");
-  }
-});
 
-      
 });
 });
