@@ -4,6 +4,7 @@
   background: #036;
   overflow: hidden;
   margin: 0;
+    position: fixed;
 }
 
 .cat, .poptart, .head, .feet, .tail, .rainbow, .sprite, .stars li, .stars li i {
