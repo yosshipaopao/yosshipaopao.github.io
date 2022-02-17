@@ -59,10 +59,6 @@ $(document).on("mousemove", function(e) {
     mouseY = e.pageY;
 });
 
-$(document).on("scroll", function(e) {
-    mouseX = e.pageX;
-    mouseY = e.pageY;
-});
 
 $("body").on({
   "mouseenter": function() {
