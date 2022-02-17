@@ -1,6 +1,6 @@
  window.addEventListener('load', function(){  
-  const spinner = document.getElementById('back');
+  var spinner = document.getElementById('back');
   spinner.classList.add('loaded');
-  const rainbow = document.getElementByClassName('rainbow');
-  rainbow.classList.add('loaded');
+  var rainbow = document.getElementByClassName('rainbow');
+  rainbow.classList.toggle('loaded');
  });
