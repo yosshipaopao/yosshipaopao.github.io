@@ -97,5 +97,3 @@ $("a").on({
 
 });
 });
-var spinner = document.getElementById('loading');
-spinner.classList.add('loaded');
